@@ -1,10 +1,10 @@
-let champ = document.getElementById("code")
+let champ = document.getElementById("code");
 
 champ.addEventListener("input", function(e){
 
   let validCode = /^CODE-$/;
 
-  let value = validCode.test(champ.value) ;
+  let value = validCode.test(champ.value);
 
   let submit = document.getElementById("submit-btn");
 
