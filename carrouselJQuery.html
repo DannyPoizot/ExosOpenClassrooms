@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Carrousel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  </head>
+  <body>
+    <style>
+    #carrousel{
+    position:relative;
+    height:200px;
+    width:700px;
+    margin:auto;
+  }
+  #carrousel ul li{
+    position: absolute;
+    top:0;
+    left:0;
+  }
+  ul{
+    position: absolute;
+  }
+  .controls{
+    position: absolute;
+    z-index: 1;
+    transform: translate(+50%, -50%);
+  }
+  ul{
+    list-style: none;
+  }
+    </style>
+
+    <div id="carrousel">
+      <div class="controls">
+        <i class="fas fa-arrow-left"></i>
+        <i class="fas fa-arrow-right"></i>
+      </div>
+      <ul>
+        <li><img src="https://picsum.photos/id/237/200/300" /></li>
+	      <li><img src="https://picsum.photos/seed/picsum/200/300" /></li>
+	      <li><img src="https://picsum.photos/200/300?grayscale" /></li>
+      </ul>
+    </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="js/carrouselJQuery.js"></script>
+  </body>
+</html>
