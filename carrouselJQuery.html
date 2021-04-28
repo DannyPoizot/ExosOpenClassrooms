@@ -16,12 +16,17 @@
   #carrousel ul li{
     position: absolute;
     top:0;
-    left:0;
+    left:200px;
   }
   ul{
     position: absolute;
   }
+  i{
+    padding-left: 30px;
+    margin-right: 180px;
+  }
   .controls{
+    margin-top: 150px;
     position: absolute;
     z-index: 1;
     transform: translate(+50%, -50%);
@@ -31,11 +36,11 @@
   }
     </style>
 
+    <div class="controls">
+      <i class="fas fa-arrow-left"></i>
+      <i class="fas fa-arrow-right"></i>
+    </div>
     <div id="carrousel">
-      <div class="controls">
-        <i class="fas fa-arrow-left"></i>
-        <i class="fas fa-arrow-right"></i>
-      </div>
       <ul>
         <li><img src="https://picsum.photos/id/237/200/300" /></li>
 	      <li><img src="https://picsum.photos/seed/picsum/200/300" /></li>

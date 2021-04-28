@@ -47,7 +47,7 @@ function slideImg(){
 
 	slideImg();
 
-}, 2000);
+  }, 5000);
 }
 slideImg();
 });
